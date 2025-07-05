@@ -1,0 +1,9 @@
+/* styles/PinnacleLab.module.css */
+
+.infoSection {
+    max-width: 700px;
+    padding: 1rem;
+    border-left: 4px solid #3b82f6;
+    background-color: #f9fafb;
+  }
+  

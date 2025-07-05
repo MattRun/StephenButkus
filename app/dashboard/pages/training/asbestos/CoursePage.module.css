@@ -1,0 +1,98 @@
+.pageContainer {
+    display: flex;
+    flex-direction: column;
+    background-color: #f9f9f9;
+    color: #333;
+  }
+  
+  .mainContent {
+    padding: 2rem;
+  }
+  
+  .header {
+    background-color: #ffffff;
+    padding: 2rem;
+    border-radius: 8px;
+    text-align: center;
+    margin-bottom: 1rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  .courseTitle {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 0.5rem;
+  }
+  
+  .instructor {
+    font-size: 1.1rem;
+    color: #666;
+  }
+  
+  .enrollButton {
+    background-color: #0070f3;
+    color: #ffffff;
+    padding: 0.8rem 2rem;
+    font-size: 1.1rem;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-top: 1rem;
+    transition: background-color 0.3s ease;
+  }
+  
+  .enrollButton:hover {
+    background-color: #005bb5;
+  }
+  
+  .stats {
+    display: flex;
+    justify-content: space-around;
+    padding: 1rem;
+    background-color: #e6f7ff;
+    border-radius: 8px;
+    margin-bottom: 2rem;
+  }
+  
+  .tabContainer {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+  }
+  
+  .tabButton {
+    padding: 0.5rem 1.5rem;
+    background-color: transparent;
+    border: none;
+    font-size: 1rem;
+    color: #666;
+    cursor: pointer;
+    border-bottom: 2px solid transparent;
+    transition: all 0.3s;
+  }
+  
+  .tabButton:hover, .activeTab {
+    color: #0070f3;
+    border-color: #0070f3;
+  }
+  
+  .tabContent {
+    background-color: #ffffff;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  .tabContent h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+  
+  .tabContent p {
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+  
+
+  

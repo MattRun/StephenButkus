@@ -1,0 +1,88 @@
+.sliderContainer {
+  padding: 4rem 0;
+  background-color: #f3f4f6;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  min-height: 450px; /* Ensure no extra white space */
+}
+
+.carousel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 100%;
+}
+
+.navButton {
+  color: #3c6484; /* Matches overall theme */
+  font-size: 2.5rem;
+  cursor: pointer;
+  background: none;
+  border: none;
+  padding: 0.5rem;
+  position: absolute;
+  z-index: 10;
+  top: 50%; /* Vertically center the arrows */
+  transform: translateY(-50%);
+}
+
+.navButton:nth-child(1) {
+  left: 5%; /* Bring arrows closer to the center */
+}
+
+.navButton:nth-child(3) {
+  right: 5%;
+}
+
+.cardsContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  position: relative;
+  perspective: 1500px;
+}
+
+.card {
+  position: absolute;
+  width: 480px; /* Adjusted width */
+  height: 380px; /* Adjusted height */
+  transition: transform 0.6s ease, opacity 0.6s ease;
+  opacity: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #f3f4f6;
+  border-radius: 12px;
+  /* box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2); */
+}
+
+.center {
+  transform: scale(1.1) translateX(0) translateZ(50px);
+  z-index: 3;
+  opacity: 1;
+}
+
+.left {
+  transform: scale(0.9) translateX(-200px) rotateY(15deg); /* Slightly adjusted */
+  z-index: 2;
+  opacity: 0.75;
+}
+
+.right {
+  transform: scale(0.9) translateX(200px) rotateY(-15deg); /* Slightly adjusted */
+  z-index: 2;
+  opacity: 0.75;
+}
+
+.hidden {
+  transform: scale(0.7) translateX(300px) rotateY(0deg);
+  z-index: 1;
+  opacity: 0;
+}

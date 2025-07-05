@@ -1,0 +1,18 @@
+.section {
+  transition: background-color 1.5s ease-out;
+}
+
+.highlight {
+  background-color: #00a2ff;
+  animation: fadeOutHighlight 3.5s forwards;
+}
+
+@keyframes fadeOutHighlight {
+  0% {
+    background-color: #00a2ff;
+  }
+  100% {
+    background-color: white;
+  }
+}
+

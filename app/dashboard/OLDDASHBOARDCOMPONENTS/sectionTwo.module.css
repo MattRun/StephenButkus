@@ -1,0 +1,65 @@
+
+/* styles/faqSection.module.css */
+
+.container {
+    display: flex;
+    flex-direction: column; /* Default to column for small screens */
+    width: 100%;
+    height: auto; /* Adjust height to fit content */
+    background-color: #f7fafc; /* Light background color */
+}
+
+@media (min-width: 1024px) {
+    .container {
+        flex-direction: row; /* Row direction for larger screens */
+    }
+}
+
+.textContainer {
+    background-color: #f7fafc; /* Match light color */
+    color: #63b3ed; /* Light blue for text */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2rem;
+    height: auto;
+    max-height: 100%; /* Constrain height of text container */
+}
+
+.title {
+    color: #63b3ed; /* Light blue for title */
+    line-height: 1.2; /* Maintain consistent line height */
+}
+
+.link {
+    color: #63b3ed; /* Link color */
+    text-decoration: underline;
+    transition: color 0.3s;
+}
+
+.link:hover {
+    color: #90cdf4; /* Lighter blue on hover */
+}
+
+.image {
+    width: 100%;
+    height: auto; /* Ensures the image fills its container without distortion */
+    object-fit: contain; /* Keeps the entire SVG visible without cropping */
+}
+
+.accordionItem {
+    margin-bottom: 1rem;
+}
+
+.accordionButton {
+    background: none;
+    border: none;
+    color: inherit;
+    cursor: pointer;
+    outline: none;
+    transition: color 0.3s;
+}
+
+.accordionButton:hover {
+    color: #90cdf4; /* Lighter blue on hover */
+}

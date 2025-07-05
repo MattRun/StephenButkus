@@ -1,0 +1,115 @@
+.overlay {
+    position: fixed;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.75);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 50;
+  }
+  
+  .modal {
+    display: flex;
+    width: 100%;
+    max-width: 800px;
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  }
+  
+  .imageSection {
+    display: none;
+    position: relative;
+    width: 50%;
+  }
+  
+  .image {
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+  }
+  
+  @media (min-width: 768px) {
+    .imageSection {
+      display: block;
+    }
+  }
+  
+  .formSection {
+    width: 100%;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: black;
+    margin-bottom: 1.5rem;
+  }
+  
+  .input {
+    width: 100%;
+    padding: 1rem;
+    font-size: 1.125rem;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    margin-bottom: 1rem;
+    color: black;
+  }
+  
+  .authButton {
+    width: 100%;
+    padding: 1rem;
+    background-color: black;
+    color: white;
+    font-size: 1.125rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .authButton:hover {
+    background-color: #444;
+  }
+  
+  .toggleButton,
+  .closeButton {
+    margin-top: 1rem;
+    text-align: center;
+    font-size: 0.875rem;
+    color: black;
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .toggleButton:hover,
+  .closeButton:hover {
+    color: #333;
+  }
+  
+  @media (max-width: 767px) {
+    .formSection {
+      padding: 1.5rem;
+    }
+  
+    .title {
+      font-size: 1.75rem;
+    }
+  
+    .input {
+      font-size: 1rem;
+      padding: 0.875rem;
+    }
+  
+    .authButton {
+      padding: 0.875rem;
+      font-size: 1rem;
+    }
+  }
+  

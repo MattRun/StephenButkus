@@ -1,0 +1,690 @@
+
+/* main.module.css */
+
+/* .mainContainer {
+  background-image: url('/VerticalBG.png');
+  background-size: cover;
+  background-position: center;
+} */
+
+/* HeroSection.module.css */
+/* main.module.css */
+
+.heroContainer {
+  height: 100vh;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.heroVideo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.heroImage {
+  position: absolute;
+  top: 20%; /* Adjust to control how far down the overlay appears */
+  left: 50%; /* Centers it horizontally */
+  transform: translateX(-50%); /* Adjusts horizontal centering */
+  width: 100%; /* Full width */
+  max-width: 100%; /* Keeps a margin on small screens */
+  height: auto;
+  z-index: 2;
+}
+
+
+
+@media (max-width: 768px) {
+  .heroImage {
+    width: 100%; /* Adjust width for smaller screens */
+    margin-top: 10vh; /* Reduce top margin for smaller screens */
+    margin-left: 1rem; /* Adjust left margin for smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .heroImage {
+    width: 100%; /* Full width on extra-small screens */
+    margin-top: 5vh; /* Minimize top margin */
+    margin-left: 1rem;
+  }
+}
+
+.exploreButton {
+  bottom: 6rem; /* Increased the space from the bottom */
+  right: 2rem;
+  background-color: #3b82f6;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.375rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: background-color 0.3s ease;
+}
+
+.exploreButton:hover {
+  background-color: #2563eb;
+}
+
+
+
+
+
+/* Full-width background */
+.featureWrapperFullWidth {
+  width: 100%; /* Full width */
+  background-color: #ffffff; /* Background color */
+  padding: 2rem 0; /* Vertical padding */
+  display: flex; /* Use flexbox for centering */
+  justify-content: center; /* Center content horizontally */
+}
+
+/* Centered container */
+.featureInnerContainer {
+  width: 60%; /* Adjust width as needed (e.g., 60% for central alignment) */
+  max-width: 1200px; /* Optional: limit max width for large screens */
+  padding: 0; /* No extra padding inside */
+}
+
+/* Feature Card */
+.featureCard {
+  position: relative;
+  overflow: hidden;
+  border-radius: 1rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+}
+
+.featureCard img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+
+
+
+
+
+
+
+/* Video Section */
+.videoSectionContainer {
+  position: relative;
+  width: 100%;
+  height: 800px; /* Increased height for more room */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #16436F;
+  /* background-color: #1c1a19; */
+  /* background-color: #1c1a10; */
+  /* background-color: #000000; */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.textOverlay {
+  position: absolute;
+  top: 50%; /* Center vertically */
+  left: 50%; /* Center horizontally */
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  color: white;
+  text-shadow: 2px 2px 4px black;
+  font-family: 'Source Sans Pro', sans-serif;
+  text-align: center;
+}
+
+.textOverlay h2 {
+  font-size: 48px;
+  margin: 0;
+  line-height: 1.2;
+  font-weight: 700;
+}
+
+.textOverlay h1 {
+  font-size: 64px;
+  margin: 0;
+  font-weight: 800;
+}
+
+
+.videoWrapper {
+  position: relative;
+  width: 80%; /* Larger video width */
+  height: auto; /* Maintain aspect ratio */
+  max-width: 1200px; /* Limit maximum width */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  border-radius: 10px; /* Rounded edges for video */
+}
+
+.video {
+  z-index: 1;
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.playButton {
+  position: absolute;
+  z-index: 2;
+  width: 100px; /* Larger button */
+  height: 100px; /* Larger button */
+  background-color: #10b1b4;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  font-weight: bold;
+  font-size: 18px; /* Slightly larger font size */
+  pointer-events: auto;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Subtle shadow for better visibility */
+}
+
+.exploreLink {
+  position: absolute;
+  bottom: 30px;
+  right: 50px;
+  z-index: 2;
+  font-size: 24px;
+  color: white;
+  text-shadow: 2px 2px 4px black;
+}
+
+
+
+
+/* flip tile section */
+.courseOverviewSection {
+  padding: 4rem;
+  background-color: #ffffff;
+  position: relative;
+  /* background-image: url('/WhiteGreyBG.jpeg'); */
+  background-size: cover;
+  background-position: center;
+  z-index: 1; /* Lower z-index to allow Calendar section to overlap */
+}
+
+
+/* Centered Header Image */
+
+.headerTextContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center; /* Centers vertically */
+  margin-bottom: 2rem; /* Space between header and tiles */
+}
+
+.headerText {
+  font-size: 3rem; /* Larger text for emphasis */
+  font-weight: bold;
+  color: transparent; /* Makes gradient visible */
+  background-image: linear-gradient(90deg, #0078ff, #00d2ff);
+  background-clip: text;
+  -webkit-background-clip: text; /* For Safari support */
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2); /* Subtle shadow for better readability */
+  padding: 0.5rem 1rem; /* Slight padding for compactness */
+  border-radius: 12px; /* Rounded corners */
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.headerText:hover {
+  transform: scale(1.05); /* Slight grow effect on hover */
+  box-shadow: 0 4px 10px rgba(0, 120, 255, 0.3); /* Glow effect */
+}
+
+
+
+/* Bleed Effect: Adjust for overlap */
+.courseOverviewSection::after {
+  content: '';
+  position: absolute;
+  bottom: -3rem; /* Adjusts the bleed effect into the next section */
+  left: 0;
+  width: 100%;
+  height: 3rem; /* Adjust based on how much trailing you want */
+  /* background: linear-gradient(to bottom, rgba(255, 255, 255, 0), #ffffff); */
+  z-index: -1; /* Lower z-index to keep it behind the content */
+}
+/* Grid Container */
+.gridContainer {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* Default: 4 columns */
+  gap: 1.5rem;
+  padding: 0 2rem;
+}
+
+/* Card Styling */
+.card {
+  perspective: 1000px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem;
+}
+
+.cardInner {
+  position: relative;
+  width: 100%;
+  height: 300px;
+  transform-style: preserve-3d;
+  transition: transform 0.6s;
+}
+
+.card:hover .cardInner {
+  transform: rotateY(180deg);
+}
+
+.cardFront,
+.cardBack {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  backface-visibility: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.cardFront {
+  background-color: #333;
+  display: flex;
+  flex-direction: column;
+  background-size: cover;
+  background-position: center;
+}
+
+.cardTitle {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 0.5rem 1rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+.cardBack {
+  background-color: 
+  #24a9e0;
+  transform: rotateY(180deg);
+  flex-direction: column;
+  padding: 1rem;
+  text-align: center;
+  font-size: 1rem;
+}
+
+.cardDescription {
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  color: white;
+}
+
+.cardLink {
+  color: white;
+  text-decoration: underline;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* Bleed Effect for Section */
+
+
+/* Responsive Grid Adjustments */
+@media (max-width: 1024px) {
+  .gridContainer {
+    grid-template-columns: repeat(3, 1fr); /* 3 columns on medium screens */
+  }
+}
+
+@media (max-width: 768px) {
+  .gridContainer {
+    grid-template-columns: repeat(2, 1fr); /* 2 columns on smaller screens */
+    padding: 1rem; /* Adjust padding for smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .gridContainer {
+    grid-template-columns: 1fr; /* Single column on extra small screens */
+  }
+
+  .cardTitle {
+    font-size: 1rem; /* Smaller font size on mobile */
+  }
+
+  .cardInner {
+    height: 250px; /* Reduced height on smaller screens */
+  }
+}
+
+
+
+
+
+
+
+
+
+/* Adjust the following section's padding to account for the bleed effect */
+.featureWrapper {
+  padding-top: 3rem; /* Matches the bleed height */
+}
+
+.viewAllContainer {
+  margin-top: 2rem;
+  position: relative;
+  height: 200px;
+  /* background-image: url('/AEHS_Logo_Banner.png'); */
+  /* background-color: #ffffff; */
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Overlay for Button */
+.viewAllOverlay {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+/* Button Style */
+.viewAllButton {
+  font-size: 1.2rem; /* Text size for readability */
+  font-weight: bold;
+  color: white;
+  padding: 0.8rem 1.5rem; /* Padding for button size */
+  background-color: #0078ff; /* Vibrant blue color */
+  border-radius: 25px; /* Fully rounded button */
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem; /* Space between text and arrow */
+  text-decoration: none; /* Remove underline for links */
+}
+
+.viewAllButton:hover {
+  background-color: #005bb5; /* Darker blue on hover */
+  transform: translateY(-2px); /* Subtle lift on hover */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Enhance shadow on hover */
+}
+
+/* Arrow Style */
+.arrow {
+  font-size: 1.5rem; /* Slightly larger arrow */
+  transition: transform 0.3s ease; /* Smooth transition for hover */
+}
+
+.viewAllButton:hover .arrow {
+  transform: translateX(5px); /* Move arrow slightly on hover */
+}
+
+
+/* Spaces Section */
+.spacesSection {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr; /* Left card is wider */
+  gap: 20px;
+  min-height: 65vh; /* Ensures a minimum height while allowing for more content space */
+  padding: 2rem 5rem;
+  background-color: #ffffff;
+  position: relative;
+  /* background-image: url('/WhiteGreyBG.jpeg'); */
+  background-size: cover;
+  background-position: center;
+  z-index: 1;
+  overflow: visible; /* Allow content to be fully visible */
+}
+
+@media (max-width: 768px) {
+  .spacesSection {
+    grid-template-columns: 1fr;
+    padding: 1rem;
+    min-height: auto;
+    height: auto;
+  }
+}
+
+.leftSpacesFeature {
+  position: relative;
+  overflow: hidden;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  height: 100%; /* Fills its column */
+}
+
+.leftSpacesFeature img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.leftSpacesFeature:hover img {
+  transform: scale(1.05);
+}
+
+.rightSpacesFeatures {
+  display: grid;
+  grid-template-rows: 1fr 1fr; /* Two equal-height rows */
+  gap: 20px;
+  height: 100%; /* Right column fills available space */
+}
+
+.spacesFeatureCardSmall {
+  position: relative;
+  overflow: hidden;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.spacesFeatureCardSmall img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.spacesFeatureCardSmall:hover img {
+  transform: scale(1.05);
+}
+
+.textOverlayOnImage {
+  position: absolute;
+  bottom: 10%;
+  left: 10%;
+  z-index: 2;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+}
+
+.textOverlayOnImage h3 {
+  margin: 0;
+  font-size: 24px;
+}
+
+.textOverlayOnImage p {
+  font-size: 16px;
+  font-weight: normal;
+  margin-bottom: 10px;
+}
+
+.featureButton {
+  background-color: #24a9e0;
+  color: black;
+  padding: 0.5rem 1rem;
+  border-radius: 9999px;
+  font-weight: bold;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.featureButton:hover {
+  background-color: #fff;
+}
+
+/* Extra Bottom Spacing to Avoid Bleeding */
+.spacesSection::after {
+  content: "";
+  display: block;
+  height: 2rem; /* Adjust this for more spacing */
+  width: 100%;
+  background: #ffffff;
+}
+
+
+
+
+
+
+
+/* Calendar Section Styles */
+.calendarSection {
+  position: relative;
+  padding: 4rem 2rem;
+  display: flex;
+  justify-content: center;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  /* background-image: url('/WhiteGreyBG.jpeg'); */
+  background-color: #fff;
+  background-size: cover;
+  background-position: center;
+}
+
+.calendarContainer {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  max-width: 1400px;
+  width: 100%;
+}
+
+.calendarImageWrapper {
+  flex: 0.75; /* Takes up 3/4 of the width */
+  display: flex;
+  justify-content: flex-start;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.calendarImageWrapper:hover {
+  transform: scale(1.05);
+}
+
+.calendarImage {
+  width: 100%;
+  height: auto;
+  border-radius: 0;
+  object-fit: cover;
+  margin: 0;
+  padding: 0;
+}
+
+.calendarTextContent {
+  flex: 0.25; /* Takes up 1/4 of the width */
+  text-align: left;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.calendarTitle {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 1rem;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
+}
+
+.calendarDescription {
+  font-size: 1.125rem;
+  line-height: 1.6;
+  color: #666;
+  margin-bottom: 1.5rem;
+}
+
+.calendarLinkButton {
+  color: #4a90e2;
+  font-size: 1.125rem;
+  font-weight: bold;
+  text-decoration: none;
+  border: none;
+  background: none;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.calendarLinkButton:hover {
+  color: #357ab8;
+}
+
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .calendarContainer {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .calendarImageWrapper {
+    flex: 1; /* Full width on smaller screens */
+  }
+
+  .calendarTextContent {
+    flex: 1;
+    text-align: center;
+    padding: 1rem 0;
+  }
+
+  .calendarTitle {
+    font-size: 2rem;
+  }
+
+  .calendarDescription {
+    font-size: 1rem;
+  }
+
+  .calendarLinkButton {
+    font-size: 1rem;
+  }
+
+  /* Adjust the bleed effect for smaller screens */
+  .calendarSection::after {
+    bottom: -1.5rem;
+    height: 1.5rem;
+  }
+
+  .featureWrapper {
+    padding-top: 1.5rem;
+  }
+}

@@ -1,0 +1,79 @@
+.historyContainer {
+  background-color: #fff;
+  padding: 4rem 10%; /* Increased padding for left and right */
+  overflow: hidden; /* Ensure animations stay within bounds */
+}
+
+.historyTitle {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #3c6484;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.historyItem {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  margin-bottom: 4rem; /* Add more space between sections */
+  opacity: 0; /* Start hidden for animation */
+  transform: translateY(50px); /* Start slightly below */
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.historyItemVisible {
+  opacity: 1; /* Make visible */
+  transform: translateY(0); /* Move to original position */
+}
+
+.historyItemReverse {
+  flex-direction: row-reverse;
+}
+
+.historyImage {
+  width: 500px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.historyTextContainer {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.historyTitleText {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #3c6484;
+  margin-bottom: 0.5rem;
+}
+
+.historySubheading {
+  font-size: 1.25rem;
+  font-weight: 500;
+  color: #547494;
+}
+
+.historyDivider {
+  border-top: 2px solid #547494;
+  margin: 0.5rem 0;
+}
+
+.historyText {
+  font-size: 1.125rem;
+  color: #547494;
+}
+
+.historyText strong {
+  font-weight: bold;
+}
+
+.link {
+  color: #3c6484;
+  font-weight: bold;
+  text-decoration: underline;
+}

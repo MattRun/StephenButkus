@@ -1,0 +1,51 @@
+.container {
+  display: flex;
+  flex-direction: column; /* Ensure responsiveness */
+  width: 100%;
+  height: 80vh; /* Full height */
+  background-color: #f7fafc; /* Teal background */
+  overflow: hidden; /* Prevent unwanted scrollbars */
+}
+
+@media (min-width: 1024px) {
+  .container {
+    flex-direction: row; /* Switch to row layout on larger screens */
+  }
+}
+
+.textContainer {
+  background-color: #f7fafc; /* Match teal color */
+  color: #1e3a8a; /* Dark blue for text */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 2rem;
+  height: auto;
+  max-height: 100%; /* Constrain height of text container */
+}
+
+.title {
+  color: #1e3a8a; /* Dark blue for title */
+  line-height: 1.2; /* Improve spacing for large text */
+}
+
+.link {
+  color: #1e3a8a; /* Link color */
+  text-decoration: underline;
+  transition: color 0.3s;
+}
+
+.link:hover {
+  color: #2c5282; /* Lighter blue on hover */
+}
+
+.image {
+  object-fit: contain; /* Show the full image */
+  width: 100%;
+  height: 100%;
+  transition: transform 0.5s ease-out; /* Smooth scaling effect */
+}
+
+.image:hover {
+  transform: scale(1.05); /* Slight zoom-in on hover */
+}

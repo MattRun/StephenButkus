@@ -1,0 +1,25 @@
+.contactContainer {
+  position: relative;
+  width: 100%; /* Full width */
+  height: 60vh; /* Section height */
+  overflow: hidden; /* Prevent content overflow */
+}
+
+.contactButton {
+  position: absolute;
+  bottom: 20%; /* Keeps it up 1/5th from the bottom */
+  left: 24%; /* Adjusted slightly more to the left */
+  background-color: #214a9f;
+  color: #fff;
+  font-weight: 600;
+  padding: 1rem 2.5rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Button shadow for emphasis */
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  font-size: 1.2rem;
+}
+
+.contactButton:hover {
+  background-color: #acadad;
+  transform: scale(1.05); /* Subtle zoom on hover */
+}

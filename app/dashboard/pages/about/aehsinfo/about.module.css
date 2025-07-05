@@ -1,0 +1,200 @@
+/* about.module.css */
+
+.imageContainer {
+  width: 400px;
+  height: 300px;
+  background-color: white; /* Changed background to white */
+}
+
+.historyItem {
+  max-width: 50%;
+  background-color: white; /* Changed background to white */
+}
+
+.instructorSection {
+  display: flex;
+  padding: 2rem;
+  background-color: white; /* Changed background to white */
+  align-items: center;
+  gap: 2rem;
+}
+
+.instructorImageContainer {
+  flex: 1;
+  max-width: 400px;
+  background-color: white; /* Changed background to white */
+}
+
+.instructorInfo {
+  flex: 1;
+  padding-left: 2rem;
+  color: #3c6484;
+  background-color: white; /* Changed background to white */
+}
+
+.positionTitle {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #547494;
+}
+
+.instructorName {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: #3c6484;
+  margin-top: 0.5rem;
+}
+
+.titleHeader {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #698296;
+  margin-top: 1rem;
+}
+
+.since {
+  font-size: 1.1rem;
+  font-weight: 400;
+  color: #547494;
+  margin-bottom: 1.5rem;
+}
+
+.bio {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #3c6484;
+}
+
+.bio strong {
+  color: #547494;
+  font-weight: 700;
+}
+
+.quote {
+  font-size: 1.2rem;
+  color: #547494;
+  font-style: italic;
+  margin-top: 1.5rem;
+  line-height: 1.4;
+}
+
+.missionStatementContainer {
+  padding: 2rem; /* Padding on top, bottom, and left */
+  background-color: white; /* Changed background to white */
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.imageContainer {
+  position: relative;
+  width: 40%; /* Set image width to slightly less than half */
+  height: 300px;
+  margin-right: 2rem;
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: white; /* Changed background to white */
+}
+
+.textContainer {
+  flex: 1;
+  text-align: right;
+  color: #acadad;
+  background-color: white; /* Changed background to white */
+}
+
+.missionTitle {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #3c6484; /* Adjusted color for contrast with white */
+}
+
+.missionText {
+  margin-top: 1rem;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #3c6484; /* Adjusted color for better readability */
+}
+
+
+
+
+.headerContainer {
+  position: relative;
+  width: 100%;
+  height: 60vh; /* Adjust height as needed */
+  padding: 4rem 2rem;
+  background-color: #547494;
+  overflow: hidden;
+}
+
+/* Background Image Overlay */
+.headerContainer::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('/AEHS_Logo_Banner.png'); /* Background image */
+  background-size: cover; /* Ensure it covers the full area */
+  background-position: center; /* Center the image */
+  opacity: 0.1; /* Set opacity for the image */
+  z-index: 0; /* Keep it behind other content */
+}
+.headerTitle {
+  font-size: 6rem;
+  font-weight: 800;
+  color: white;
+  line-height: 1.1;
+  z-index: 10; /* Ensures text is above the background */
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Subtle shadow for better contrast */
+  position: relative;
+}
+
+.headerTitle::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /* background: rgba(255, 255, 255, 0.6); Semi-transparent white overlay */
+  z-index: -1; /* Places overlay behind the text */
+  padding: 0.5rem; /* Adds space around the text */
+  border-radius: 12px; /* Smooths the corners */
+}
+
+/* Subtitle Styles */
+.headerSubtitle {
+  font-size: 2rem;
+  font-weight: 500;
+  color: white;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7); /* Adds contrast to the subtitle */
+  margin-top: 1rem;
+  position: relative;
+  z-index: 10;
+}
+
+.headerSubtitle::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%); /* Centers the overlay vertically */
+  width: calc(100% + 2rem); /* Extend slightly beyond the text width */
+  height: 120%;
+  /* background: rgba(255, 255, 255, 0.6); Semi-transparent white overlay */
+  z-index: -1;
+  border-radius: 8px;
+}
+
+.imageContainer {
+  max-width: 200px;
+  border-radius: 8px;
+  overflow: hidden;
+  /* box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); */
+  background-color:   #547494;
+  z-index: 10; /* Place image above the background */
+}

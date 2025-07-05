@@ -1,0 +1,178 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model Account {
+  id                Int     @id @default(autoincrement())
+  userId            Int
+  type              String
+  provider          String
+  providerAccountId String
+  refresh_token     String?
+  access_token      String?
+  expires_at        Int?
+  token_type        String?
+  scope             String?
+  id_token          String?
+  session_state     String?
+  user              User    @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@unique([provider, providerAccountId])
+}
+
+model Session {
+  id           String   @id @default(cuid())
+  sessionToken String   @unique
+  userId       Int
+  expires      DateTime
+  user         User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+}
+
+model VerificationToken {
+  identifier String
+  token      String   @unique
+  expires    DateTime
+
+  @@unique([identifier, token])
+}
+
+model Certificate {
+  id                Int       @id @default(autoincrement())
+  certificateNumber String    @unique
+  studentName       String
+  courseName        String
+  issueDate         DateTime
+  expirationDate    DateTime?
+  isValid           Boolean   @default(true)
+  createdAt         DateTime  @default(now())
+  courseID          String?
+  securitySeal      String?
+  adminId           Int?
+  admin             User?     @relation("UserCertificates", fields: [adminId], references: [id])
+}
+
+model User {
+  id               Int              @id @default(autoincrement())
+  email            String           @unique
+  password         String
+  verified         Boolean          @default(false)
+  createdAt        DateTime         @default(now())
+  image            String?
+  codeExpiresAt    DateTime?
+  verificationCode String?
+  bio              String?
+  birthday         DateTime?
+  name             String?
+  phone            String?
+  role             String           @default("USER")
+  accounts         Account[]
+  certificates     Certificate[]    @relation("UserCertificates")
+  enrollments      Enrollment[]
+  notifications    Notification[]
+  payments         Payment[]
+  progress         Progress[]
+  sessions         Session[]
+  userPermissions  UserPermission[]
+}
+
+model UserPermission {
+  id         Int        @id @default(autoincrement())
+  userId     Int
+  permission Permission
+  user       User       @relation(fields: [userId], references: [id])
+
+  @@unique([userId, permission])
+}
+
+model Payment {
+  id            Int      @id @default(autoincrement())
+  userId        Int
+  courseId      Int
+  amount        Float
+  status        String
+  transactionId String?
+  createdAt     DateTime @default(now())
+  updatedAt     DateTime @updatedAt
+  course        Course   @relation("CoursePayments", fields: [courseId], references: [id])
+  user          User     @relation(fields: [userId], references: [id])
+}
+
+model Course {
+  id                  Int          @id @default(autoincrement())
+  title               String
+  description         String?
+  type                String
+  createdAt           DateTime     @default(now())
+  contactHours        String
+  location            String
+  nextSession         String
+  pdfPath             String?
+  time                String
+  updatedAt           DateTime     @updatedAt
+  keyTopics           Json
+  category            String       @default("Uncategorized")
+  duration            String       @default("TBD")
+  format              String       @default("Online")
+  language            String       @default("English")
+  level               String       @default("Initial")
+  quickbooksLink      String?
+  registrationLink    String?
+  talentLmsLink       String?
+  additionalParagraph String?
+  enrollments         Enrollment[]
+  lessons             Lesson[]
+  payments            Payment[]    @relation("CoursePayments")
+}
+
+model Enrollment {
+  id            Int    @id @default(autoincrement())
+  userId        Int
+  courseId      Int
+  status        String
+  paymentStatus String
+  course        Course @relation(fields: [courseId], references: [id])
+  user          User   @relation(fields: [userId], references: [id])
+}
+
+model Lesson {
+  id         Int        @id @default(autoincrement())
+  courseId   Int
+  title      String
+  contentUrl String?
+  order      Int
+  course     Course     @relation(fields: [courseId], references: [id])
+  progress   Progress[]
+}
+
+model Progress {
+  id       Int    @id @default(autoincrement())
+  userId   Int
+  lessonId Int
+  status   String
+  lesson   Lesson @relation(fields: [lessonId], references: [id])
+  user     User   @relation(fields: [userId], references: [id])
+}
+
+model Notification {
+  id        Int       @id @default(autoincrement())
+  userId    Int
+  message   String?
+  type      String?
+  sentAt    DateTime?
+  content   String
+  createdAt DateTime  @default(now())
+  read      Boolean   @default(false)
+  title     String
+  user      User      @relation(fields: [userId], references: [id])
+}
+
+enum Permission {
+  ADMIN
+  USER
+  INSTRUCTOR
+}

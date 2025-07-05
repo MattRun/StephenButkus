@@ -1,0 +1,4 @@
+-- AlterTable
+ALTER TABLE "Notification" ALTER COLUMN "message" DROP NOT NULL,
+ALTER COLUMN "type" DROP NOT NULL,
+ALTER COLUMN "sentAt" DROP NOT NULL;

@@ -1,0 +1,163 @@
+/* faq.module.css */
+.customButton {
+    margin: 10px;
+    padding: 12px;
+    font-size: 1rem;
+  }
+  
+  .heading {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+  }
+  
+  .question {
+    padding: 10px 50x;
+    font-weight: 600;
+    cursor: pointer;
+    transition: color 0.5s;
+    font-size: 16px;
+    font-family:"Source Sans Pro" ;
+  }
+  
+  .answer {
+    padding-left: 50px;
+    color: #4a4a4a;
+    margin-bottom: 20px;
+    font-size: 15px;
+    font-family:"Source Sans Pro" ;
+  }
+  
+  .answerOpen {
+    display: block;
+  }
+  
+  .answerClosed {
+    display: none;
+  }
+  
+  .text-blue-600 {
+    font-size: 20px;
+    color: #1E40AF;
+    font-family:"Source Sans Pro" ;
+   
+}
+
+.text-blue-600:hover {
+    font-size: 20px;
+    color: #1E3A8A;
+    font-family:"Source Sans Pro" ;
+   
+  }
+  
+  ul.list-none {
+    list-style-type: none;
+  }
+
+  .mainContent {
+    font-family: "Source Sans Pro";
+    padding-right: 100px;
+    padding-left: 20px;
+    max-width: 1200px;
+    margin: 0 auto; /* Centers the content */
+    position: relative; /* Make sure the background stays contained */
+  }
+  
+  
+  /*Main accordian section */
+  .mainContentSection {
+    padding-right: 160px; /* Adjust the right padding */
+    padding-left: 0px; /* Optional: Adjust the left padding as needed */
+    max-width: 1200px; /* Optional: Set a max width for better alignment */
+    margin: 0 auto; /* Centers the content */
+    /* background-image: url("/AdobeStock_343425125.jpeg"); */
+  }
+  
+  .faqQuestion:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Slight shadow on hover */
+    border-color: #e5e5e5;  /* Border color to highlight */
+    transition: box-shadow 0.3s ease, border-color 0.3s ease; /* Smooth transition */
+  }
+  
+  
+  
+/* faq.module.css */
+/* Sidebar Styles */
+.sidebar {
+    font-family:"Source Sans Pro" ;
+    background-color: white;
+    color: black;
+    width: 250px;
+    padding: 20px;
+    height: calc(100vh - 60px); /* Adjust for the header's height */
+    position: sticky; /* Stays in view while scrolling */
+    top: 60px; /* This accounts for the height of the navbar */
+    overflow-y: auto; /* Sidebar scrolls independently */
+    border-right: 1px solid #ddd;
+  }
+  
+  
+  /* Main heading for sidebar */
+  .sidebarHeading {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  /* Navigation group styles */
+  .navigationGroup {
+    margin-bottom: 20px;
+    font-family:"Source Sans Pro" ;
+    /* font-size: 16px; */
+  }
+  
+  .navigationGroupTitle {
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family:"Source Sans Pro" ;
+  }
+  
+  .navigationGroupItems {
+    padding-left: 16px;
+    margin-top: 10px;
+    font-family:"Source Sans Pro" ;
+  }
+  
+  /* Individual items */
+  .navigationItem {
+    display: block;
+    padding: 10px;
+    font-size: 16px;
+    color: #333;
+    border: 1px solid transparent; /* Default no border */
+    transition: all 0.3s ease;
+  }
+  
+  .navigationItem:hover {
+    color: #0070f3; /* Blue hover color */
+    border: 1px solid #0070f3; /* Border around item on hover */
+    text-decoration: underline; /* Underline on hover */
+    font-size: 16px;
+  }
+  
+
+
+
+  .grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  
+  .grid-cols-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+  
+  /* Adjust for gaps between columns */
+  .gap-4 {
+    gap: 0.1rem; /* Adjust spacing between links if needed */
+  }
+  
