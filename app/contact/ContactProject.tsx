@@ -104,11 +104,12 @@ export default function ContactPage() {
         message: "",
         botField: "",
       });
-    } catch (e: any) {
-      setErr(e?.message || "Something went wrong.");
-    } finally {
-      setSubmitting(false);
-    }
+    } catch (e: unknown) {
+        const msg = e instanceof Error ? e.message : "Something went wrong.";
+        setErr(msg);
+      } finally {
+        setSubmitting(false);
+      }
   };
 
   return (
