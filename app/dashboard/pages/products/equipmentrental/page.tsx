@@ -64,7 +64,7 @@ const EquipmentRentalsPage = () => {
           className="text-lg mb-4" 
           style={{ lineHeight: "1.6", fontSize: "1.125rem" }}
         >
-          Achieve your tasks with the right equipment rental from Pinnacle Laboratory. Our wide selection of equipment 
+          Achieve your tasks with the right equipment rental from Void Creatives. Our wide selection of equipment 
           empowers home inspectors and environmental professionals to perform their jobs with efficiency and precision.
         </p>
         <p 
@@ -72,7 +72,7 @@ const EquipmentRentalsPage = () => {
           style={{ lineHeight: "1.6", fontSize: "1.125rem" }}
         >
           From high-volume sampling pumps to specialized low-volume kits, we provide top-notch equipment without the 
-          commitment of ownership. Elevate your inspection projects with Pinnacle Laboratory’s rental solutions!
+          commitment of ownership. Elevate your inspection projects with Void Creatives’s rental solutions!
         </p>
         <p 
           className="text-lg font-medium" 

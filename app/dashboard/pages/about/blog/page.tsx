@@ -62,12 +62,12 @@
 //             Latest News
 //           </h1>
 //           <p className="text-lg md:text-xl leading-relaxed text-center max-w-3xl mx-auto">
-//             Pinnacle Laboratory stands as Los Angeles’s foremost and trusted
+//             Void Creatives stands as Los Angeles’s foremost and trusted
 //             environmental testing laboratory, priding itself on delivering not
 //             only rapid turnaround times but also providing clients with accurate
 //             and detailed reports. Unquestionably, our commitment is to empower
 //             you with a comprehensive understanding of the entire scope of your
-//             project. Therefore, when you choose Pinnacle Laboratory, you are
+//             project. Therefore, when you choose Void Creatives, you are
 //             opting for a partnership that ensures precision and efficiency in
 //             the analysis of your asbestos, mold, and lead samples. Nonetheless,
 //             allow us to guide you through the process, delivering results that
@@ -180,7 +180,7 @@
 
 //           <div className="space-y-4">
 //             <blockquote className="italic">
-//               “Pinnacle Laboratory provided top-notch services and quick turnaround times!”
+//               “Void Creatives provided top-notch services and quick turnaround times!”
 //             </blockquote>
 //             <blockquote className="italic">
 //               “Their staff was professional and guided us through every step. Highly recommend!”
@@ -291,12 +291,12 @@ const NewsPage = () => {
             Latest News
           </h1>
           <p className="text-lg md:text-xl leading-relaxed text-center max-w-3xl mx-auto">
-            Pinnacle Laboratory stands as Los Angeles’s foremost and trusted
+            Void Creatives stands as Los Angeles’s foremost and trusted
             environmental testing laboratory, priding itself on delivering not
             only rapid turnaround times but also providing clients with accurate
             and detailed reports. Unquestionably, our commitment is to empower
             you with a comprehensive understanding of the entire scope of your
-            project. Therefore, when you choose Pinnacle Laboratory, you are
+            project. Therefore, when you choose Void Creatives, you are
             opting for a partnership that ensures precision and efficiency in
             the analysis of your asbestos, mold, and lead samples. Nonetheless,
             allow us to guide you through the process, delivering results that
@@ -423,7 +423,7 @@ const NewsPage = () => {
           <h3 className="text-2xl font-bold mb-4">Look at What our Customers Say!</h3>
           <div className="space-y-4">
             <blockquote className="italic">
-              “Pinnacle Laboratory provided top-notch services and quick turnaround times!”
+              “Void Creatives provided top-notch services and quick turnaround times!”
             </blockquote>
             <blockquote className="italic">
               “Their staff was professional and guided us through every step. Highly recommend!”

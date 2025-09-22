@@ -61,7 +61,12 @@
 const nextConfig = {
   // React strict mode
   reactStrictMode: true,
-
+ 
+    images: {
+      remotePatterns: [
+        { protocol: "https", hostname: "images.unsplash.com" },
+      ],
+    },
   // Webpack modifications
   webpack(config) {
     config.resolve.fallback = {
@@ -70,6 +75,7 @@ const nextConfig = {
     };
     return config;
   },
+  
 
   // Rewrites for dynamic API routes
   async rewrites() {

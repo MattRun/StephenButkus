@@ -20,8 +20,8 @@
 //     answer: `After completing the sample analysis and quality control procedures, our lab will send a PDF copy of your results to the email address you provided.`,
 //   },
 //   {
-//     question: "Is Pinnacle Laboratory Accredited?",
-//     answer: `Yes, Pinnacle Laboratory holds federal accreditation for Asbestos Fiber Analysis through NVLAP (Lab Code #600117-0). We also are accredited under the AIHA's Industrial Hygiene, Environmental Lead, and Environmental Microbiology programs (Lab ID #225542).`,
+//     question: "Is Void Creatives Accredited?",
+//     answer: `Yes, Void Creatives holds federal accreditation for Asbestos Fiber Analysis through NVLAP (Lab Code #600117-0). We also are accredited under the AIHA's Industrial Hygiene, Environmental Lead, and Environmental Microbiology programs (Lab ID #225542).`,
 //   },
 //   {
 //     question: "Do you have a client online portal to access my results?",
@@ -110,7 +110,7 @@
 //           >
 //             <h1 className="text-8xl font-extrabold text-white mb-6">FAQs</h1>
 //             <p className="text-lg leading-relaxed text-gray-200">
-//               Pinnacle Laboratory, the preferred Environmental Testing Lab in Los Angeles, provides answers to FAQs on asbestos, mold, and lead testing. If your question is not in our FAQs, feel free to contact our team for personalized support at every step of your project.
+//               Void Creatives, the preferred Environmental Testing Lab in Los Angeles, provides answers to FAQs on asbestos, mold, and lead testing. If your question is not in our FAQs, feel free to contact our team for personalized support at every step of your project.
 //             </p>
 //           </motion.div>
 //         </div>
@@ -219,8 +219,8 @@ const faqs = [
     answer: `After completing the sample analysis and quality control procedures, our lab will send a PDF copy of your results to the email address you provided.`,
   },
   {
-    question: "Is Pinnacle Laboratory Accredited?",
-    answer: `Yes, Pinnacle Laboratory holds federal accreditation for Asbestos Fiber Analysis through NVLAP (Lab Code #600117-0). We are also accredited under AIHA's Industrial Hygiene (heavy metals), Environmental Lead, and Environmental Microbiology (mold) programs (Lab ID #225542).`,
+    question: "Is Void Creatives Accredited?",
+    answer: `Yes, Void Creatives holds federal accreditation for Asbestos Fiber Analysis through NVLAP (Lab Code #600117-0). We are also accredited under AIHA's Industrial Hygiene (heavy metals), Environmental Lead, and Environmental Microbiology (mold) programs (Lab ID #225542).`,
   },
   {
     question: "Do you have a client online portal to access my results?",

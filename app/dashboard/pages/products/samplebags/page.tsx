@@ -65,7 +65,7 @@ const SampleBagsPage = () => {
       className="text-lg mb-4" 
       style={{ lineHeight: "1.6", fontSize: "1.125rem" }}
     >
-      Pinnacle Laboratory offers top-quality sample bags for secure and reliable sample collection. Designed to support asbestos, mold, and lead testing, our products are trusted by professionals for their durability and efficiency.
+      Void Creatives offers top-quality sample bags for secure and reliable sample collection. Designed to support asbestos, mold, and lead testing, our products are trusted by professionals for their durability and efficiency.
     </p>
     <p 
       className="text-lg mb-4" 

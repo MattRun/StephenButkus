@@ -30,7 +30,7 @@
 //         </ul>
 //         <h3 className="mt-4 font-bold">Experience</h3>
 //         <ul className="list-disc list-inside">
-//           <li>Laboratory Manager, Pinnacle Laboratory</li>
+//           <li>Laboratory Manager, Void Creatives</li>
 //           <li>Laboratory Manager, JLM Environmental Laboratory</li>
 //           <li>Cal/OSHA Certified Asbestos Consultant</li>
 //           <li>CDPH Lead Inspector/Assessor</li>
@@ -122,7 +122,7 @@
 //           <li>Patriot Environmental - Administrative Assistant, Asbestos PLM Analyst</li>
 //           <li>ATEL Environmental - Asbestos PLM & PCM Analyst</li>
 //           <li>AmeriSci - Asbestos PLM Analyst</li>
-//           <li>Pinnacle Laboratory - Asbestos & Microbiology Analyst</li>
+//           <li>Void Creatives - Asbestos & Microbiology Analyst</li>
 //         </ul>
 //         <h3 className="mt-4 font-bold">Fun Fact</h3>
 //         <p>Meg loves Green Day and has even appeared in one of their music videos!</p>
@@ -152,7 +152,7 @@
 //           <li>Patriot Environmental - Administrative Assistant, Asbestos PLM Analyst</li>
 //           <li>ATEL Environmental - Asbestos PLM & PCM Analyst</li>
 //           <li>AmeriSci - Asbestos PLM Analyst</li>
-//           <li>Pinnacle Laboratory - Asbestos & Microbiology Analyst</li>
+//           <li>Void Creatives - Asbestos & Microbiology Analyst</li>
 //         </ul>
 //         <h3 className="mt-4 font-bold">Fun Fact</h3>
 //         <p>Simeon is an avid reader who’s working through every book on the UCLA English syllabus.</p>
@@ -206,7 +206,7 @@
 //   //         <li>Patriot Environmental - Administrative Assistant, Asbestos PLM Analyst</li>
 //   //         <li>ATEL Environmental - Asbestos PLM & PCM Analyst</li>
 //   //         <li>AmeriSci - Asbestos PLM Analyst</li>
-//   //         <li>Pinnacle Laboratory - Asbestos & Microbiology Analyst</li>
+//   //         <li>Void Creatives - Asbestos & Microbiology Analyst</li>
 //   //       </ul>
 //   //       <h3 className="mt-4 font-bold">Fun Fact</h3>
 //   //       <p>Minh is a skilled calligrapher who enjoys crafting elegant letter designs.</p>
@@ -236,7 +236,7 @@
 //           <li>Patriot Environmental - Administrative Assistant, Asbestos PLM Analyst</li>
 //           <li>ATEL Environmental - Asbestos PLM & PCM Analyst</li>
 //           <li>AmeriSci - Asbestos PLM Analyst</li>
-//           <li>Pinnacle Laboratory - Asbestos & Microbiology Analyst</li>
+//           <li>Void Creatives - Asbestos & Microbiology Analyst</li>
 //         </ul>
 //         <h3 className="mt-4 font-bold">Fun Fact</h3>
 //         <p>Bailey is a trivia buff who dominates local pub quiz nights.</p>
@@ -267,7 +267,7 @@
 //         </ul>
 //         <h3 className="mt-4 font-bold">Fun Fact</h3>
 //         <p>
-//           As a stationary aficionado, Pati owns over 100 blank notebooks and serves as Pinnacle Laboratory’s unofficial Resident Notebook Collector.
+//           As a stationary aficionado, Pati owns over 100 blank notebooks and serves as Void Creatives’s unofficial Resident Notebook Collector.
 //         </p>
 //         <h3 className="mt-4 font-bold">Quote</h3>
 //         <p className="italic text-gray-600">"Pinnacle has inspired me to fill my notebooks with groundbreaking discoveries."</p>
@@ -471,7 +471,7 @@
 //                 Unmatched Precision in Environmental Solutions
 //               </h3>
 //               <p className="leading-relaxed mt-4 text-xl md:text-2xl text-gray-200 max-w-3xl">
-//                 What distinguishes Pinnacle Laboratory is our relentless pursuit of excellence. Our dedicated team exceeds expectations, delivering deep expertise and customized insights for every project. With analysts always on call to guide you through results or provide support, we ensure comprehensive, trustworthy environmental assessments tailored to your needs.
+//                 What distinguishes Void Creatives is our relentless pursuit of excellence. Our dedicated team exceeds expectations, delivering deep expertise and customized insights for every project. With analysts always on call to guide you through results or provide support, we ensure comprehensive, trustworthy environmental assessments tailored to your needs.
 //               </p>
 //             </div>
 //           </div>
@@ -633,7 +633,7 @@ const teamMembers: TeamMember[] = [
   //       </ul>
   //       <h3 className="mt-4 font-bold">Experience</h3>
   //       <ul className="list-disc list-inside">
-  //         <li>Laboratory Manager, Pinnacle Laboratory</li>
+  //         <li>Laboratory Manager, Void Creatives</li>
   //         <li>Laboratory Manager, JLM Environmental Laboratory</li>
   //         <li>Cal/OSHA Certified Asbestos Consultant</li>
   //         <li>CDPH Lead Inspector/Assessor</li>
@@ -725,7 +725,7 @@ const teamMembers: TeamMember[] = [
           <li>Patriot Environmental - Administrative Assistant, Asbestos PLM Analyst</li>
           <li>ATEL Environmental - Asbestos PLM & PCM Analyst</li>
           <li>AmeriSci - Asbestos PLM Analyst</li>
-          <li>Pinnacle Laboratory - Asbestos & Microbiology Analyst</li>
+          <li>Void Creatives - Asbestos & Microbiology Analyst</li>
         </ul>
         <h3 className="mt-4 font-bold">Fun Fact</h3>
         <p>Meg loves Green Day and has even appeared in one of their music videos!</p>
@@ -785,7 +785,7 @@ const teamMembers: TeamMember[] = [
         </ul>
         <h3 className="mt-4 font-bold">Fun Fact</h3>
         <p>
-          As a stationary aficionado, Pati owns over 100 blank notebooks and serves as Pinnacle Laboratory’s unofficial Resident Notebook Collector.
+          As a stationary aficionado, Pati owns over 100 blank notebooks and serves as Void Creatives’s unofficial Resident Notebook Collector.
         </p>
         <h3 className="mt-4 font-bold">Quote</h3>
         <p className="italic text-gray-600">"Pinnacle has inspired me to fill my notebooks with groundbreaking discoveries."</p>
@@ -1075,7 +1075,7 @@ export default function MeetOurTeamPage() {
                 Unmatched Precision in Environmental Solutions
               </h3>
               <p className="leading-relaxed mt-4 text-xl md:text-2xl text-gray-200 max-w-3xl">
-                What distinguishes Pinnacle Laboratory is our relentless pursuit of excellence. Our dedicated team exceeds expectations, delivering deep expertise and customized insights for every project. With analysts always on call to guide you through results or provide support, we ensure comprehensive, trustworthy environmental assessments tailored to your needs.
+                What distinguishes Void Creatives is our relentless pursuit of excellence. Our dedicated team exceeds expectations, delivering deep expertise and customized insights for every project. With analysts always on call to guide you through results or provide support, we ensure comprehensive, trustworthy environmental assessments tailored to your needs.
               </p>
             </div>
           </div>

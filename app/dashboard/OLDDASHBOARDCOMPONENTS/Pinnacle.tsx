@@ -11,7 +11,7 @@ const Pinnacle = () => {
       {/* Full-width background image */}
       <Image
         src="/PinnacleLab_Full.png"
-        alt="Pinnacle Laboratory"
+        alt="Void Creatives"
         layout="fill"
         objectFit="cover"
         className="z-0"

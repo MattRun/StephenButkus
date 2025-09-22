@@ -56,7 +56,7 @@ const LeadProductsPage = () => {
           className="text-lg mb-4" 
           style={{ lineHeight: "1.6", fontSize: "1.125rem" }}
         >
-          Lead Products, now offered by Pinnacle Laboratory, redefine the landscape of project completion with a focus 
+          Lead Products, now offered by Void Creatives, redefine the landscape of project completion with a focus 
           on safety and efficiency. With an unwavering commitment to excellence, our services encompass exceptional 
           product quality and a dedication to meeting client needs.
         </p>
@@ -64,7 +64,7 @@ const LeadProductsPage = () => {
           className="text-lg mb-4" 
           style={{ lineHeight: "1.6", fontSize: "1.125rem" }}
         >
-          At Pinnacle Laboratory, we proudly provide Invisi-Wipes and rental equipment to support various project 
+          At Void Creatives, we proudly provide Invisi-Wipes and rental equipment to support various project 
           requirements. From environmental testing to home inspections, our products and services empower you with the 
           tools for success.
         </p>

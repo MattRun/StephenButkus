@@ -60,7 +60,7 @@ const MoldProductsPage = () => {
           Molds exist naturally in the outdoor environment, contributing to the decomposition of organic matter. However, indoor mold growth should be prevented as it thrives on wet surfaces.
         </p>
         <p className="text-lg mb-4" style={{ lineHeight: "1.6", fontSize: "1.125rem" }}>
-          Pinnacle Laboratory offers a wide selection of mold products to help you address these issues. From air cassettes to mold swabs, our products ensure precision and efficiency in sampling and testing.
+          Void Creatives offers a wide selection of mold products to help you address these issues. From air cassettes to mold swabs, our products ensure precision and efficiency in sampling and testing.
         </p>
         <p className="text-lg font-medium" style={{ color: "white", marginTop: "1rem" }}>
           Can’t find the exact product you’re looking for? <span style={{ fontWeight: "bold", color: "#0099EE" }}>Contact us</span>, and we’ll assist you in finding the perfect solution.

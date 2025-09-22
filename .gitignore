@@ -37,3 +37,8 @@ next-env.d.ts
 sendgrid.env
 sendgrid.env
 sendgrid.env
+
+# Env
+.env
+.env.local
+.env.*

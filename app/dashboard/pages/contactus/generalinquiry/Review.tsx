@@ -46,7 +46,7 @@
 //               textShadow: '-1px 1px 3px rgba(0, 0, 0, 0.2)', // Slight shadow for subheading
 //             }}
 //           >
-//             Whether you've worked with us before, appreciate our services, or simply enjoy exploring our website, click the image and share your feedback with Pinnacle Laboratory!
+//             Whether you've worked with us before, appreciate our services, or simply enjoy exploring our website, click the image and share your feedback with Void Creatives!
 //           </p>
 //         </div>
 
@@ -126,7 +126,7 @@ export default function Review() {
 
         {/* Subheading */}
         <p className="text-lg sm:text-xl text-black font-normal">
-          Whether you've worked with us before, appreciate our services, or simply enjoy exploring our website, click the image and share your feedback with Pinnacle Laboratory!
+          Whether you've worked with us before, appreciate our services, or simply enjoy exploring our website, click the image and share your feedback with Void Creatives!
         </p>
       </div>
 

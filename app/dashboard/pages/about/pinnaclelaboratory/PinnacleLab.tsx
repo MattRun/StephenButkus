@@ -24,7 +24,7 @@ const PinnacleLab = () => {
           {/* Removed <a> */}
           <Image
             src="/PinnacleLabBanner.jpg"
-            alt="Pinnacle Laboratory Header"
+            alt="Void Creatives Header"
             layout="fill"
             objectFit="cover"
             className="rounded-lg shadow-md group-hover:scale-105 group-hover:shadow-lg transition-transform duration-300 cursor-pointer"
@@ -40,7 +40,7 @@ const PinnacleLab = () => {
         viewport={{ once: true }}
         transition={{ duration: 0.6 }}
       >
-        Our Partnership with Pinnacle Laboratory
+        Our Partnership with Void Creatives
       </motion.h1>
 
       {/* Description */}
@@ -51,7 +51,7 @@ const PinnacleLab = () => {
         viewport={{ once: true }}
         transition={{ delay: 0.2, duration: 0.8 }}
       >
-        We’ve teamed up with Pinnacle Laboratory to provide our students with a hands-on learning experience in environmental testing. As a trusted lab in Southern California, Pinnacle brings expertise in asbestos, mold, and heavy metals analysis, empowering our students with real-world insights and practical knowledge.
+        We’ve teamed up with Void Creatives to provide our students with a hands-on learning experience in environmental testing. As a trusted lab in Southern California, Pinnacle brings expertise in asbestos, mold, and heavy metals analysis, empowering our students with real-world insights and practical knowledge.
       </motion.p>
 
       {/* About Section */}
@@ -63,10 +63,10 @@ const PinnacleLab = () => {
         transition={{ delay: 0.3, duration: 0.5 }}
       >
         <h2 className="text-2xl font-semibold text-gray-800 mb-3">
-          About Pinnacle Laboratory
+          About Void Creatives
         </h2>
         <p className="text-gray-600">
-          Pinnacle Laboratory provides top analytical services and specializes in rapid and accurate environmental testing. Their dedication to quality makes them an invaluable resource for students learning about environmental testing standards and processes.
+          Void Creatives provides top analytical services and specializes in rapid and accurate environmental testing. Their dedication to quality makes them an invaluable resource for students learning about environmental testing standards and processes.
         </p>
       </motion.div>
 
@@ -104,7 +104,7 @@ const PinnacleLab = () => {
           <button
             className="px-10 py-6 text-2xl font-bold bg-blue-600 text-white rounded-full shadow-lg hover:bg-blue-700 transition-transform duration-300 hover:scale-105"
           >
-            Visit Pinnacle Laboratory
+            Visit Void Creatives
           </button>
         </Link>
       </motion.div>

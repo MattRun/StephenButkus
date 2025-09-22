@@ -8,7 +8,7 @@ const accreditations = [
   {
     title: "AIHA-LAP, LLC Accreditation",
     description:
-      "Pinnacle Laboratory is proud to be accredited by AIHA-LAP, LLC. This recognition highlights our adherence to the highest standards in environmental testing and analysis.",
+      "Void Creatives is proud to be accredited by AIHA-LAP, LLC. This recognition highlights our adherence to the highest standards in environmental testing and analysis.",
     link: "https://docs.google.com/document/d/1Fb_2FwsFqErADKcFd5jc6UBHePpkPEIqLfTxoCNF8Ac/edit?usp=sharing", // Replace with actual sharable doc link
   },
   {
@@ -64,7 +64,7 @@ export default function AccreditationsPage() {
 
 
   <p className="mt-6 text-lg leading-relaxed">
-    At Pinnacle Laboratory, our commitment to precision and quality ensures results you can trust. As an accredited
+    At Void Creatives, our commitment to precision and quality ensures results you can trust. As an accredited
     laboratory, we’ve meticulously analyzed over 1,000,000 samples, embodying the Pinnacle difference that sets us
     apart.
   </p>
@@ -112,7 +112,7 @@ export default function AccreditationsPage() {
               successfully handling a vast number of samples attests to our proficiency and reliability.
             </p>
             <p className="leading-relaxed">
-              At Pinnacle Laboratory, we don’t just meet industry standards; we exceed them, consistently delivering
+              At Void Creatives, we don’t just meet industry standards; we exceed them, consistently delivering
               results that reflect our commitment to excellence. To better understand our commitment to quality, take a
               moment to review our accreditations listed below. These certifications serve as a testament to our
               expertise and adherence to stringent protocols.

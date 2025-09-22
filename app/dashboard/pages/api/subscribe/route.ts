@@ -16,7 +16,7 @@ export async function POST(req: NextRequest) {
     const userMsg = {
       to: email,
       from: "info@pinnaclelab.com", // Replace with your verified sender
-      subject: "Subscription Confirmation - Pinnacle Laboratory",
+      subject: "Subscription Confirmation - Void Creatives",
       html: `
         <!DOCTYPE html>
         <html>
@@ -36,7 +36,7 @@ export async function POST(req: NextRequest) {
           <body>
             <div class="container">
               <div class="header">
-                <h1>Welcome to Pinnacle Laboratory!</h1>
+                <h1>Welcome to Void Creatives!</h1>
               </div>
               <div class="content">
                 <p>Thank you for subscribing to our newsletter. You will now receive our latest news, articles, and exclusive offers directly in your inbox.</p>
@@ -46,7 +46,7 @@ export async function POST(req: NextRequest) {
                 </p>
               </div>
               <div class="footer">
-                <p>Pinnacle Laboratory | 15200 Grevillea Avenue, Suite A-1, Lawndale, CA 90260</p>
+                <p>Void Creatives | 15200 Grevillea Avenue, Suite A-1, Lawndale, CA 90260</p>
                 <p>info@pinnaclelab.com | (310) 431-9270</p>
               </div>
             </div>
@@ -61,7 +61,7 @@ export async function POST(req: NextRequest) {
     const adminMsg = {
       to: "info@pinnaclelab.com",
       from: "info@pinnaclelab.com",
-      subject: "New Subscriber Notification - Pinnacle Laboratory",
+      subject: "New Subscriber Notification - Void Creatives",
       html: `
         <h2>New Subscriber Added</h2>
         <p>A new user has subscribed to our newsletter.</p>
@@ -78,7 +78,7 @@ export async function POST(req: NextRequest) {
         message: "Subscription successful",
         popup: {
           title: "Thank You for Subscribing!",
-          subheading: "Welcome to Pinnacle Laboratory",
+          subheading: "Welcome to Void Creatives",
           text: "You will now receive the latest news, articles, and exclusive offers.",
           imageUrl: "/AdobeStock_1.png", // Update with your desired image path
         },

@@ -64,7 +64,7 @@ const AsbestosProductsPage = () => {
           className="text-lg mb-4" 
           style={{ lineHeight: "1.6", fontSize: "1.125rem" }}
         >
-          Pinnacle Laboratory proudly serves as your trusted partner for asbestos testing and products in Los Angeles. 
+          Void Creatives proudly serves as your trusted partner for asbestos testing and products in Los Angeles. 
           With over 25 years of experience, we deliver unparalleled precision, exceptional turnaround times, and a 
           comprehensive selection of asbestos-related products.
         </p>

@@ -13,8 +13,12 @@ const config: Config = {
   theme: {
     extend: {
       fontFamily: {
-        sans: ["Saira", "sans-serif"], // Set Saira as default font
+        serif: ['"Times New Roman"', 'Georgia', 'serif'],
       },
+  
+  
+
+  
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",

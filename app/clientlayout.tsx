@@ -1,11 +1,8 @@
-// app/ClientLayout.tsx
-
 'use client';
 
 import { useState, useEffect } from 'react';
 import LoadingPage from './dashboard/pages/loadingpage/LoadingPage';
-import Chatbot from './chatbot/page';
-import CookieConsent from './cookieconsent/page';
+import Header from './header/headerj'; // ✅ Your custom header
 
 export default function ClientLayout({
   children,
@@ -15,34 +12,31 @@ export default function ClientLayout({
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
-    // Set a fixed duration for the loading page (e.g., 3 seconds)
     const timer = setTimeout(() => {
       setIsLoading(false);
     }, 1000);
-
     return () => clearTimeout(timer);
   }, []);
 
-  return (
+  return isLoading ? (
+    <LoadingPage />
+  ) : (
     <>
-      {isLoading ? (
-        <LoadingPage />
-      ) : (
-        <>
-          {/* Chatbot: Ensure it's always rendered on top and properly positioned */}
-          <div className="fixed bottom-24 right-6 z-50">
-            {/* <Chatbot /> */}
-          </div>
+      {/* ✅ Show Header only once */}
+      <Header />
 
-          {/* Main Content */}
-          {children}
+      {/* ✅ Main Content */}
+      {children}
 
-          {/* Cookie Consent */}
-          <div className="fixed bottom-0 left-0 z-40">
-            {/* <CookieConsent /> */}
-          </div>
-        </>
-      )}
+      {/* Optional: Chatbot */}
+      <div className="fixed bottom-24 right-6 z-50">
+        {/* <Chatbot /> */}
+      </div>
+
+      {/* Optional: Cookie Consent */}
+      <div className="fixed bottom-0 left-0 z-40">
+        {/* <CookieConsent /> */}
+      </div>
     </>
   );
 }

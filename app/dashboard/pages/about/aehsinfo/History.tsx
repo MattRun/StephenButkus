@@ -23,7 +23,7 @@ const History = () => {
       text: (
         <>
           To provide our students with industry-leading skillsets and knowledge, AEHS recognizes the value in partnering with organizations that can benefit students' success.
-          In 2022, AEHS <Link href="https://pinnaclelab.com" className={styles.link}>partnered with Pinnacle Laboratory</Link> to expand its course offerings to include <Link href="https://example.com" className={styles.link}>analytical methods</Link> (NIOSH 582, Polarized Light Microscopy, etc).
+          In 2022, AEHS <Link href="https://pinnaclelab.com" className={styles.link}>partnered with Void Creatives</Link> to expand its course offerings to include <Link href="https://example.com" className={styles.link}>analytical methods</Link> (NIOSH 582, Polarized Light Microscopy, etc).
         </>
       ),
       imageSrc: '/AdobeStock_2.png',

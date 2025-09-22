@@ -33,7 +33,7 @@ export async function POST(req: NextRequest) {
       html: `
         <p>Dear ${name},</p>
         <p>Thank you for reaching out to our experts. We have received your question and will respond as soon as possible.</p>
-        <p>Best regards,<br/>Pinnacle Laboratory Team</p>
+        <p>Best regards,<br/>Void Creatives Team</p>
       `,
     };
     await sgMail.send(userMsg);

@@ -329,13 +329,13 @@ export default function GeneralInquiry() {
           <header style="background: linear-gradient(90deg, #16436F, #10b1b4); color: #ffffff; text-align: center; padding: 20px;">
             <img 
               src="https://pinnaclelab.com/pinnaclelab/Logos/logoemail.png"
-              alt="Pinnacle Laboratory Banner" 
+              alt="Void Creatives Banner" 
               style="max-width: 100%; height: auto; border-radius: 5px;"
             />
           </header>
           <main style="padding: 20px;">
             <h2 style="color: #16436F; margin-top: 0;">Dear ${formData.name},</h2>
-            <p>Thank you for reaching out to <strong>Pinnacle Laboratory</strong>. We’ve received your inquiry and will respond promptly.</p>
+            <p>Thank you for reaching out to <strong>Void Creatives</strong>. We’ve received your inquiry and will respond promptly.</p>
             <p>Here’s what you sent us:</p>
             <blockquote style="font-style: italic; color: #555; margin: 20px 0; padding-left: 10px; border-left: 4px solid #16436F;">
               ${formData.message}
@@ -355,7 +355,7 @@ export default function GeneralInquiry() {
       </div>
     `;
 
-    const userSubject = "Thank You for Reaching Out to Pinnacle Laboratory";
+    const userSubject = "Thank You for Reaching Out to Void Creatives";
 
     const response = await fetch(
       `../api?text=${encodeURIComponent(userHtml)}&to=${encodeURIComponent(formData.email)}&subject=${encodeURIComponent(userSubject)}&name=${encodeURIComponent(formData.name)}`,
@@ -492,7 +492,7 @@ export default function GeneralInquiry() {
         <div className="w-full lg:w-1/3 lg:pl-6 mt-8 lg:mt-0">
           <div className="p-6 bg-white rounded-lg shadow-md border border-gray-300 text-black">
             <h2 className="text-2xl font-bold mb-4 text-[#10b1b4]">Contact Us</h2>
-            <p className="mb-2 font-semibold text-black"><strong>Pinnacle Laboratory</strong></p>
+            <p className="mb-2 font-semibold text-black"><strong>Void Creatives</strong></p>
             <p className="mb-2 text-black">Office: <a href="tel:3104319270" className="text-[#10b1b4]">(310)431-9270</a></p>
             <p className="mb-4 text-black">Email: <a href="mailto:info@pinnaclelab.com" className="text-[#10b1b4]">info@pinnaclelab.com</a></p>
             <h3 className="text-xl font-bold mt-4 text-black py-1">Office Hours:</h3>

@@ -50,7 +50,7 @@ export default function NonFungalBlogPage() {
             </div>
             <p className="text-lg text-gray-700 leading-8">
               Non-fungal particulates are a critical but often overlooked part of indoor environmental assessments.
-              This article explores how Pinnacle Laboratory evaluates these particles and what it means for health and compliance.
+              This article explores how Void Creatives evaluates these particles and what it means for health and compliance.
             </p>
           </div>
 
@@ -135,7 +135,7 @@ export default function NonFungalBlogPage() {
               <div className="w-16 h-16 rounded-full bg-gray-300 flex-shrink-0" />
               <div>
                 <p className="text-sm text-gray-600">
-                  <span className="font-bold">Bailey Coleman</span> is Pinnacle Laboratory’s Microbiology Technical Manager, specializing in airborne particle analysis and viability culture protocols.
+                  <span className="font-bold">Bailey Coleman</span> is Void Creatives’s Microbiology Technical Manager, specializing in airborne particle analysis and viability culture protocols.
                 </p>
               </div>
             </div>
